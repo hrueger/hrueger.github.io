@@ -1,0 +1,14 @@
+.headerImg {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.avatar-container {
+    top: 20%;
+    .avatarImg {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+    }
+}
