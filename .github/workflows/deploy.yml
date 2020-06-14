@@ -24,8 +24,8 @@ jobs:
          ng build --prod
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.5
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BASE_BRANCH: dev
+      with:
         BRANCH: master
         FOLDER: dist/hrueger
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BASE_BRANCH: dev
