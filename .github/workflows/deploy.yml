@@ -23,9 +23,9 @@ jobs:
          npm install
          ng build --prod
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v2
+      uses: JamesIves/github-pages-deploy-action
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: dist/hrueger
