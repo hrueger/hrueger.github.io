@@ -1,0 +1,17 @@
+.collapse {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -11rem;
+    }
+    to {
+        margin-top: 0rem;
+    }
+}
+
+.navbarcontainer {
+    z-index: 100;
+}
