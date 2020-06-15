@@ -1,10 +1,11 @@
-interface Project {
+export interface Project {
   githubUrl: string;
   name: string;
   prettyName: string;
   category: string;
   icon: string;
   status: 'development' | 'released' | 'deprecated' | 'noTime';
+  description: string;
 }
 
 
@@ -16,6 +17,7 @@ export const projects: Project[] = [
     category: 'other',
     icon: 'fas fa-globe',
     status: 'development',
+    description: 'The website you are viewing right now ;-)'
   },
   {
     githubUrl: 'https://github.com/hrueger/AGView',
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     category: 'AGSuite',
     icon: 'agview.png',
     status: 'released',
+    description: 'The live on-the-fly event video player.',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGLight',
@@ -32,6 +35,7 @@ export const projects: Project[] = [
     category: 'AGSuite',
     icon: 'aglight.png',
     status: 'development',
+    description: 'An intuitive software for controlling DMX lights.',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGTicket',
@@ -40,6 +44,7 @@ export const projects: Project[] = [
     category: 'AGSuite',
     icon: 'agticket.png',
     status: 'development',
+    description: 'A complete solution for event ticketing.',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGSki',
@@ -48,6 +53,7 @@ export const projects: Project[] = [
     category: 'AGSuite',
     icon: 'agski.png',
     status: 'development',
+    description: 'The ski run license generator.',
   },
   {
     githubUrl: 'https://github.com/hrueger/ngx-onlyoffice',
@@ -56,6 +62,7 @@ export const projects: Project[] = [
     category: 'library',
     icon: 'fas fa-wrench',
     status: 'released',
+    description: 'An OnlyOffice wrapper library for Angular.',
   },
   {
     githubUrl: 'https://github.com/hrueger/ngx-advanced-image-editor',
@@ -64,6 +71,7 @@ export const projects: Project[] = [
     category: 'library',
     icon: 'fas fa-wrench',
     status: 'released',
+    description: 'An image editor for Angular based on the ToastUI Image Editor.',
   },
   {
     githubUrl: 'https://github.com/hrueger/nativescript-letter-avatar',
@@ -72,6 +80,7 @@ export const projects: Project[] = [
     category: 'library',
     icon: 'fas fa-wrench',
     status: 'released',
+    description: 'Generate beautiful letter avatars in your nativescript app!',
   },
   {
     githubUrl: 'https://github.com/hrueger/nativescript-emoji-picker',
@@ -80,6 +89,7 @@ export const projects: Project[] = [
     category: 'library',
     icon: 'fas fa-wrench',
     status: 'released',
+    description: 'The first and only emoji picker for nativescript ;-)',
   },
   {
     githubUrl: 'https://github.com/hrueger/nativescript-pure-emoji-picker',
@@ -88,6 +98,7 @@ export const projects: Project[] = [
     category: 'library',
     icon: 'fas fa-wrench',
     status: 'deprecated',
+    description: 'This is an emoji picker for nativescript purely out of nativescript components!',
   },
   {
     githubUrl: 'https://github.com/hrueger/repoman',
@@ -96,6 +107,7 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'noTime',
+    description: 'The manager app for your GitHub repositories.',
   },
   {
     githubUrl: 'https://github.com/hrueger/ng-static',
@@ -104,6 +116,7 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'noTime',
+    description: 'A generator for static html pages inspired by Angular.',
   },
   {
     githubUrl: 'https://github.com/hrueger/real-commits',
@@ -112,6 +125,7 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'noTime',
+    description: 'A badge generator to show the "real" commits of a repository.',
   },
   {
     githubUrl: 'https://github.com/hrueger/redundancyJS',
@@ -120,6 +134,7 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'released',
+    description: 'A cli tool to copy code files programatically.',
   },
   {
     githubUrl: 'https://github.com/hrueger/containerizer',
@@ -128,6 +143,7 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'released',
+    description: 'A cli tool to pack an application made with Angular and Express into a docker container.',
   },
   {
     githubUrl: 'https://github.com/hrueger/changelogjs',
@@ -136,6 +152,7 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'released',
+    description: 'A small customizable changelog generator.',
   },
   {
     githubUrl: 'https://github.com/hrueger/setup-nativescript',
@@ -144,6 +161,7 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'released',
+    description: 'A GitHub Action to setup the NativeScript development environment on Windows, Linux and MacOSX.',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGM-Tools',
@@ -152,5 +170,6 @@ export const projects: Project[] = [
     category: 'software',
     icon: 'agmtools.png',
     status: 'released',
+    description: 'An open-source platform for all kinds of workgroups.',
   },
 ];
