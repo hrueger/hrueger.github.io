@@ -1,8 +1,11 @@
 <div class="row overflow-hidden" id="projects">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-3 text-center py-5 project text-white" *ngFor="let project of projects; let idx = index">
-        <h3><i [class]="project.icon"></i> {{project.prettyName}}</h3>
+        <h3 *ngIf="hasFaIcon(project)"><i [class]="project.icon + ' fa-2x'"></i></h3>
+        <img class="icon" *ngIf="!hasFaIcon(project)" [src]="'assets/logos/' + project.icon">
+        <h3> {{project.prettyName}}</h3>
         <span [class]="'mr-2 d-inline badge badge-' + (project.status == 'released' ? 'success' : project.status == 'development' ? 'warning' : project.status == 'deprecated' ? 'secondary' : 'danger')">{{project.status}}</span>
         <span [class]="'d-inline badge badge-primary'">{{project.category}}</span>
-        <a class="d-block text-white mt-4 stretched-link" [href]="project.githubUrl">View on Github <i class="fab fa-github"></i></a>
+        <span class="d-block mb-5 mt-3">{{project.description}}</span>
+        <a class="d-block text-white stretched-link" [href]="project.githubUrl">View on Github <i class="fab fa-github"></i></a>
     </div>
 </div>

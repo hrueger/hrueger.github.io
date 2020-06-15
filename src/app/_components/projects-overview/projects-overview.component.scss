@@ -6,4 +6,8 @@ $grey: #2c3e50;
     &:hover {
         background-color: $grey;
     }
+    .icon {
+        max-width: 6rem;
+        margin-top: -2rem;
+    }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { projects } from 'src/app/_data/projects';
+import { projects, Project } from 'src/app/_data/projects';
 
 @Component({
   selector: 'app-projects-overview',
@@ -13,6 +13,10 @@ export class ProjectsOverviewComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+
+  hasFaIcon(project: Project) {
+    return project.icon.indexOf('.') === -1;
   }
 
 }
