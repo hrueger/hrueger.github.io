@@ -1,13 +1,10 @@
-<div class="header position-relative">
-    <img class="img-fluid" class="headerImg" src="assets/header.jpg">
-    <div class="avatar-container d-flex w-100 justify-content-center position-absolute text-white text-center">
-        <div class="avatar">
-            <img src="assets/avatar.png" class="avatarImg mx-auto">
-            <h1>H. Rüger</h1>
-
-            <div class="callToAction">
-                <a class="btn btn-outline-primary">View Projects</a>
-            </div>
+<div class="avatar-container d-flex justify-content-center text-white text-center mt-5 pt-5">
+    <div class="avatar">
+        <img src="assets/avatar.png" class="avatarImg mx-auto">
+        <h1>Hannes Rüger</h1>
+        <div class="callToAction">
+            <a class="btn btn-primary mr-3" (click)="goToProjects()" routerLink="">View Projects</a>
+            <a class="btn btn-primary" href="https://github.com/hrueger" target="_blank">GitHub <i class="fab fa-github"></i></a>
         </div>
     </div>
 </div>
