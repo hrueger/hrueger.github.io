@@ -1,0 +1,156 @@
+interface Project {
+  githubUrl: string;
+  name: string;
+  prettyName: string;
+  category: string;
+  icon: string;
+  status: 'development' | 'released' | 'deprecated' | 'noTime';
+}
+
+
+export const projects: Project[] = [
+  {
+    githubUrl: 'https://github.com/hrueger/hrueger.github.io',
+    name: 'hrueger.github.io',
+    prettyName: 'My personal Website',
+    category: 'other',
+    icon: 'fas fa-globe',
+    status: 'development',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/AGView',
+    name: 'AGView',
+    prettyName: 'AGView',
+    category: 'AGSuite',
+    icon: 'agview.png',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/AGLight',
+    name: 'AGLight',
+    prettyName: 'AGLight',
+    category: 'AGSuite',
+    icon: 'aglight.png',
+    status: 'development',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/AGTicket',
+    name: 'AGTicket',
+    prettyName: 'AGTicket',
+    category: 'AGSuite',
+    icon: 'agticket.png',
+    status: 'development',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/AGSki',
+    name: 'AGSki',
+    prettyName: 'AGSki',
+    category: 'AGSuite',
+    icon: 'agski.png',
+    status: 'development',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/ngx-onlyoffice',
+    name: 'ngx-onlyoffice',
+    prettyName: 'ngx-onlyoffice',
+    category: 'library',
+    icon: 'fas fa-wrench',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/ngx-advanced-image-editor',
+    name: 'ngx-advanced-image-editor',
+    prettyName: 'ngx-advanced-image-editor',
+    category: 'library',
+    icon: 'fas fa-wrench',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/nativescript-letter-avatar',
+    name: 'nativescript-letter-avatar',
+    prettyName: 'nativescript-letter-avatar',
+    category: 'library',
+    icon: 'fas fa-wrench',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/nativescript-emoji-picker',
+    name: 'nativescript-emoji-picker',
+    prettyName: 'nativescript-emoji-picker',
+    category: 'library',
+    icon: 'fas fa-wrench',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/nativescript-pure-emoji-picker',
+    name: 'nativescript-pure-emoji-picker',
+    prettyName: 'nativescript-pure-emoji-picker',
+    category: 'library',
+    icon: 'fas fa-wrench',
+    status: 'deprecated',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/repoman',
+    name: 'repoman',
+    prettyName: 'RepoMan',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'noTime',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/ng-static',
+    name: 'ng-static',
+    prettyName: 'ng-static',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'noTime',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/real-commits',
+    name: 'real-commits',
+    prettyName: 'real-commits',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'noTime',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/redundancyJS',
+    name: 'redundancyJS',
+    prettyName: 'RedundancyJS',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/containerizer',
+    name: 'containerizer',
+    prettyName: 'Containerizer',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/changelogjs',
+    name: 'changelogjs',
+    prettyName: 'changelogjs',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/setup-nativescript',
+    name: 'setup-nativescript',
+    prettyName: 'setup-nativescript',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'released',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/AGM-Tools',
+    name: 'agmtools',
+    prettyName: 'AGM-Tools',
+    category: 'software',
+    icon: 'agmtools.png',
+    status: 'released',
+  },
+];
