@@ -47,7 +47,9 @@ export class ProjectsOverviewComponent implements OnInit {
             if (typeof property === 'string') {
                 return (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
             } else {
-                //
+                const prop = property[0];
+                const list = property[1];
+                return (list.indexOf(a[prop]) < list.indexOf(b[prop])) ? -1 : (list.indexOf(a[prop]) > list.indexOf(b[prop])) ? 1 : 0;
             }
         };
     }
