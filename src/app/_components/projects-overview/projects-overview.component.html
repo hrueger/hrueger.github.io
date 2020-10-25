@@ -9,10 +9,10 @@
             <span class="d-block mb-5 mt-3">{{project.description}}</span>
         </div>    
         <div class="mt-auto">
-            <a class="d-block btn btn-outline-light mb-3" *ngIf="project.viewUrl" [href]="project.viewUrl">View <i class="fas fa-external-link-square-alt"></i></a>
-            <a class="d-block btn btn-outline-light mb-3" *ngIf="project.docsUrl" [href]="project.docsUrl">View Documentation <i class="fas fa-book"></i></a>
-            <a class="d-block btn btn-outline-light mb-3" *ngIf="project.demoUrl" [href]="project.demoUrl">Launch <i class="fas fa-rocket"></i></a>
-            <a class="d-block btn btn-outline-light" [href]="project.githubUrl">View on Github <i class="fab fa-github"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.viewUrl" [href]="project.viewUrl">View <i class="fas fa-external-link-square-alt"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.docsUrl" [href]="project.docsUrl">View Documentation <i class="fas fa-book"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.demoUrl" [href]="project.demoUrl">Launch <i class="fas fa-rocket"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light" [href]="project.githubUrl">View on Github <i class="fab fa-github"></i></a>
         </div>
     </div>
 </div>
