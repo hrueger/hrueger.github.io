@@ -15,7 +15,7 @@ export const projects: Project[] = [
     prettyName: 'My personal Website',
     category: 'other',
     icon: 'fas fa-globe',
-    status: 'development',
+    status: 'released',
     description: 'The website you are viewing right now ;-)'
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     prettyName: 'AGLight',
     category: 'AGSuite',
     icon: 'aglight.png',
-    status: 'development',
+    status: 'released',
     description: 'An intuitive software for controlling DMX lights.',
   },
   {
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     prettyName: 'AGTicket',
     category: 'AGSuite',
     icon: 'agticket.png',
-    status: 'development',
+    status: 'released',
     description: 'A complete solution for event ticketing.',
   },
   {
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     prettyName: 'AGSki',
     category: 'AGSuite',
     icon: 'agski.png',
-    status: 'development',
+    status: 'released',
     description: 'The ski run license generator.',
   },
   {
