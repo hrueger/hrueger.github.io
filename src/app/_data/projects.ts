@@ -58,7 +58,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/hrueger/hrueger.github.io',
     name: 'hrueger.github.io',
     prettyName: 'My personal Website',
-    category: 'other',
+    category: 'misc',
     icon: 'fas fa-globe',
     status: 'released',
     description: 'The website you are viewing right now ;-)',
