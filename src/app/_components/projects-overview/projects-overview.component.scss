@@ -1,13 +1,16 @@
 $green: #16a085;
 $grey: #2c3e50;
-.project {
+#projects {
     background-color: $green;
-    transition: background-color 1s ease-in-out;
-    &:hover {
-        background-color: $grey;
-    }
-    .icon {
-        max-width: 6rem;
-        margin-top: -2rem;
+    .project {
+        background-color: $green;
+        transition: background-color 1s ease-in-out;
+        &:hover {
+            background-color: $grey;
+        }
+        .icon {
+            max-width: 6rem;
+            margin-top: -2rem;
+        }
     }
 }
