@@ -6,6 +6,9 @@ export interface Project {
   icon: string;
   status: 'development' | 'released' | 'deprecated' | 'noTime';
   description: string;
+  demoUrl?: string;
+  viewUrl?: string;
+  docsUrl?: string;
 }
 
 export const projects: Project[] = [
@@ -17,6 +20,7 @@ export const projects: Project[] = [
     icon: 'schoolsquirrel.png',
     status: 'development',
     description: 'The main repo for SchoolSquirrel',
+    docsUrl: 'https://schoolsquirrel.github.io/SchoolSquirrel/',
   },
   {
     githubUrl: 'https://github.com/SchoolSquirrel/nativescript-plugins',
@@ -35,6 +39,7 @@ export const projects: Project[] = [
     icon: 'schoolsquirrel.png',
     status: 'development',
     description: '@SchoolSquirrel\'s Angular libraries',
+    demoUrl: 'https://schoolsquirrel.github.io/angular-libraries/',
   },
   {
     githubUrl: 'https://github.com/SchoolSquirrel/SquirrelFcmRelay',
@@ -90,6 +95,7 @@ export const projects: Project[] = [
     icon: 'fas fa-image',
     status: 'released',
     description: 'Assets for my apps on Google Play',
+    viewUrl: 'https://play.google.com/store/apps/developer?id=Hannes+R%C3%BCger',
   },
   {
     githubUrl: 'https://github.com/hrueger/ya-mqtt-influx-bridge',
@@ -117,6 +123,7 @@ export const projects: Project[] = [
     icon: 'fas fa-boxes',
     status: 'released',
     description: 'A simple tool to calculate the costs for a DIY Flightcase ',
+    demoUrl: 'https://projects.hannesrueger.de/diy-flightcase-calculator/',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGFree',
@@ -270,6 +277,7 @@ export const projects: Project[] = [
     icon: 'fas fa-toolbox',
     status: 'released',
     description: 'A GitHub Action to setup the NativeScript development environment on Windows, Linux and MacOSX.',
+    viewUrl: 'https://github.com/marketplace/actions/setup-nativescript',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGM-Tools',
