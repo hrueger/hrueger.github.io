@@ -230,7 +230,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/hrueger/AGM-Tools',
     name: 'agmtools',
     prettyName: 'AGM-Tools',
-    category: 'software',
+    category: 'AGSuite',
     icon: 'agmtools.png',
     status: 'released',
     description: 'An open-source platform for all kinds of workgroups.',
