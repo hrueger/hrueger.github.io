@@ -1,5 +1,5 @@
 .avatar-container {
-    min-height: 30rem;
+    min-height: 35rem;
     width: 100%;
     background-image: url(../../../assets/header.jpg);
     background-attachment: fixed;
@@ -9,5 +9,10 @@
         width: 15rem;
         height: 15rem;
         border-radius: 50%;
+    }
+    .bg {
+        background-color: rgb(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 500px;
     }
 }
