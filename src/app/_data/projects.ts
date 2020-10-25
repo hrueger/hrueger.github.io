@@ -8,7 +8,6 @@ export interface Project {
   description: string;
 }
 
-
 export const projects: Project[] = [
   {
     githubUrl: 'https://github.com/hrueger/hrueger.github.io',
@@ -29,6 +28,34 @@ export const projects: Project[] = [
     description: 'The live on-the-fly event video player.',
   },
   {
+    githubUrl: 'https://github.com/hrueger/AGRallye',
+    name: 'AGRallye',
+    prettyName: 'AGRallye',
+    category: 'AGSuite',
+    icon: 'agrallye.png',
+    status: 'released',
+    description: 'A simple app to display teams and their current\
+    points in fullscreen on a second monitor in a school-chalkboard-like style',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/playstore-assets',
+    name: 'playstore-assets',
+    prettyName: 'PlayStore Assets',
+    category: 'misc',
+    icon: 'fas fa-image',
+    status: 'released',
+    description: 'Assets for my apps on Google Play',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/ya-mqtt-influx-bridge',
+    name: 'ya-mqtt-influx-bridge',
+    prettyName: 'ya-mqtt-influx-bridge',
+    category: 'tool',
+    icon: 'fas fa-database',
+    status: 'development',
+    description: 'Yet another MQTT to InfluxDB bridge ',
+  },
+  {
     githubUrl: 'https://github.com/hrueger/AGLight',
     name: 'AGLight',
     prettyName: 'AGLight',
@@ -36,6 +63,24 @@ export const projects: Project[] = [
     icon: 'aglight.png',
     status: 'development',
     description: 'An intuitive software for controlling DMX lights.',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/diy-flightcase-calculator',
+    name: 'diy-flightcase-calculator',
+    prettyName: 'diy-flightcase-calculator',
+    category: 'tool',
+    icon: 'fas fa-boxes',
+    status: 'released',
+    description: 'A simple tool to calculate the costs for a DIY Flightcase ',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/AGFree',
+    name: 'AGFree',
+    prettyName: 'AGFree',
+    category: 'AGSuite',
+    icon: 'agfree.png',
+    status: 'released',
+    description: 'A simple tool for students to check for common free periods. ',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGTicket',
@@ -142,8 +187,26 @@ export const projects: Project[] = [
     prettyName: 'Containerizer',
     category: 'tool',
     icon: 'fas fa-toolbox',
-    status: 'released',
+    status: 'deprecated',
     description: 'A cli tool to pack an application made with Angular and Express into a docker container.',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/container-env',
+    name: 'container-env',
+    prettyName: 'ContainerEnv',
+    category: 'tool',
+    icon: 'fas fa-toolbox',
+    status: 'released',
+    description: 'An environment variable management tool for Node.js apps running inside containers',
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/my-autohotkey-scripts',
+    name: 'my-autohotkey-scripts',
+    prettyName: 'My AutoHotkey Scripts',
+    category: 'misc',
+    icon: 'far fa-keyboard',
+    status: 'released',
+    description: 'My autohotkey scripts ',
   },
   {
     githubUrl: 'https://github.com/hrueger/changelogjs',
