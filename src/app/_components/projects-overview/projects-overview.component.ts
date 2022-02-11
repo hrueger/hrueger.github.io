@@ -18,13 +18,13 @@ export class ProjectsOverviewComponent implements OnInit {
         return project.icon.indexOf('.') === -1;
     }
 
-    private dynamicSortMultiple(...properties: (string | [string, string[]])[]) {
+    private dynamicSortMultiple<T>(...properties: (string | [string, string[]])[]) {
         /*
          * save the arguments object as it will be overwritten
          * note that arguments object is an array-like object
          * consisting of the names of the properties to sort by
          */
-        return (obj1, obj2) => {
+        return (obj1: T, obj2: T) => {
             let i = 0;
             let result = 0;
             const numberOfProperties = properties.length;
@@ -39,8 +39,8 @@ export class ProjectsOverviewComponent implements OnInit {
         };
     }
 
-    private dynamicSort(property: string | [string, string[]]) {
-        return (a, b) => {
+    private dynamicSort<T extends Record<string, any>>(property: string | [string, string[]]) {
+        return (a: T, b: T) => {
             /* next line works with strings and numbers,
              * and you may want to customize it to your needs
              */
