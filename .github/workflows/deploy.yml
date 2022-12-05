@@ -30,9 +30,8 @@ jobs:
           node-version: 18
       - name: Build
         run: |
-          npm install -g @angular/cli
-          npm install
-          ng build --prod
+          yarn
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
