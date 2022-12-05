@@ -18,7 +18,7 @@ export class ProjectsOverviewComponent implements OnInit {
         return project.icon.indexOf('.') === -1;
     }
 
-    private dynamicSortMultiple<T>(...properties: (string | [string, string[]])[]) {
+    private dynamicSortMultiple<T extends Record<string, any>>(...properties: (string | [string, string[]])[]) {
         /*
          * save the arguments object as it will be overwritten
          * note that arguments object is an array-like object
