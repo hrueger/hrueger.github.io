@@ -2,16 +2,28 @@ export interface Project {
   githubUrl: string;
   name: string;
   prettyName: string;
-  category: string;
+  category: "SchoolSquirrel" | "AGSuite" | "misc" | "tool" | "library" | "Software";
   icon: string;
   status: 'development' | 'released' | 'deprecated' | 'noTime';
   description: string;
   demoUrl?: string;
   viewUrl?: string;
   docsUrl?: string;
+  isContributor?: boolean;
 }
 
 export const projects: Project[] = [
+  {
+    githubUrl: "https://github.com/josephdadams/TallyArbiter",
+    category: "Software",
+    description: "The flexible and customizable camera tally light system",
+    icon: "https://raw.githubusercontent.com/josephdadams/TallyArbiter/master/UI/src/assets/icons/icon-512x512.png",
+    name: "TallyArbiter",
+    prettyName: "Tally Arbiter",
+    status: "released",
+    docsUrl: "https://josephdadams.github.io/TallyArbiter/",
+    isContributor: true,
+  },
   {
     githubUrl: 'https://github.com/SchoolSquirrel/SchoolSquirrel',
     name: 'SchoolSquirrel',

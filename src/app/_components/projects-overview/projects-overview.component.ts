@@ -7,11 +7,13 @@ import { projects, Project } from 'src/app/_data/projects';
     styleUrls: ['./projects-overview.component.scss']
 })
 export class ProjectsOverviewComponent implements OnInit {
-    public projects: any = [];
+    public projects: Project[] = [];
 
     ngOnInit(): void {
-        this.projects = projects.sort(this.dynamicSortMultiple('category',
-            ['status', ['released', 'development', 'deprecated', 'noTime']]));
+        this.projects = projects.sort(this.dynamicSortMultiple(
+            ['category', ["Software", "AGSuite", "SchoolSquirrel", "misc", "tool", "library"]],
+            ['status', ['released', 'development', 'deprecated', 'noTime']],
+        ));
     }
 
     hasFaIcon(project: Project) {
