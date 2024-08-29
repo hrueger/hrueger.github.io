@@ -1,17 +1,41 @@
 $green: #16a085;
 $grey: #2c3e50;
+$yellow: #fdd200;
+$yellow-dark: #f9c800;
+
 .projects {
     background-color: $green;
     padding-top: 5rem;
+
     .project {
         background-color: $green;
+
         transition: background-color 1s ease-in-out;
+
+        * {
+            transition: transform 0.2s ease-in-out;
+        }
+
         &:hover {
             background-color: $grey;
+
+            &.cursor-pointer * {
+                transform: scale(1.1);
+            }
         }
+
         .icon {
             max-width: 6rem;
             margin-top: -2rem;
+        }
+
+        &.project-ticketshop {
+            background-color: $yellow;
+            color: $grey !important;
+
+            &:hover {
+                background-color: $yellow-dark;
+            }
         }
     }
 }
