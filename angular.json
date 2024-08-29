@@ -83,5 +83,8 @@
       }
     }
   },
-  "defaultProject": "hrueger"
+  "defaultProject": "hrueger",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -2,11 +2,18 @@ export interface Project {
   githubUrl: string;
   name: string;
   prettyName: string;
-  category: "SchoolSquirrel" | "AGSuite" | "misc" | "tool" | "library" | "Software";
+  category:
+    | 'SchoolSquirrel'
+    | 'AGSuite'
+    | 'misc'
+    | 'tool'
+    | 'library'
+    | 'Software';
   icon: string;
   status: 'development' | 'released' | 'deprecated' | 'noTime';
   description: string;
   demoUrl?: string;
+  videoUrl?: string;
   viewUrl?: string;
   docsUrl?: string;
   isContributor?: boolean;
@@ -14,14 +21,35 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    githubUrl: "https://github.com/josephdadams/TallyArbiter",
-    category: "Software",
-    description: "The flexible and customizable camera tally light system",
-    icon: "https://raw.githubusercontent.com/josephdadams/TallyArbiter/master/UI/src/assets/icons/icon-512x512.png",
-    name: "TallyArbiter",
-    prettyName: "Tally Arbiter",
-    status: "released",
-    docsUrl: "https://josephdadams.github.io/TallyArbiter/",
+    githubUrl: 'https://github.com/cpvalente/ontime',
+    category: 'Software',
+    description: 'Free, open-source time keeping for live events',
+    icon: 'https://raw.githubusercontent.com/cpvalente/ontime/81f0e619537b0b224d6aa165b7c14a5965a87383/apps/electron/assets/icon.png',
+    name: 'Ontime',
+    prettyName: 'Ontime',
+    status: 'released',
+    docsUrl: 'https://docs.getontime.no/',
+    isContributor: true,
+  },
+  {
+    githubUrl: 'https://github.com/hrueger/artnet-etherlighting-bridge',
+    category: 'Software',
+    description: 'Ubiquiti Etherlighting for realtime bias lighting',
+    icon: 'https://camo.githubusercontent.com/e0b2958ca1a460cf7f27bbd781055914547fe090f0c545611a1b811cb4c3f1e1/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f38714361586c56776454732f302e6a7067',
+    name: 'artnet-etherlighting-bridge',
+    prettyName: 'Artnet Etherlighting Bridge',
+    status: 'released',
+    videoUrl: 'https://www.youtube.com/watch?v=8qCaXlVwdTs',
+  },
+  {
+    githubUrl: 'https://github.com/josephdadams/TallyArbiter',
+    category: 'Software',
+    description: 'The flexible and customizable camera tally light system',
+    icon: 'https://raw.githubusercontent.com/josephdadams/TallyArbiter/master/UI/src/assets/icons/icon-512x512.png',
+    name: 'TallyArbiter',
+    prettyName: 'Tally Arbiter',
+    status: 'released',
+    docsUrl: 'https://josephdadams.github.io/TallyArbiter/',
     isContributor: true,
   },
   {
@@ -41,7 +69,7 @@ export const projects: Project[] = [
     category: 'SchoolSquirrel',
     icon: 'schoolsquirrel.png',
     status: 'development',
-    description: '@SchoolSquirrel\'s NativeScript plugins',
+    description: "@SchoolSquirrel's NativeScript plugins",
   },
   {
     githubUrl: 'https://github.com/SchoolSquirrel/angular-libraries',
@@ -50,7 +78,7 @@ export const projects: Project[] = [
     category: 'SchoolSquirrel',
     icon: 'schoolsquirrel.png',
     status: 'development',
-    description: '@SchoolSquirrel\'s Angular libraries',
+    description: "@SchoolSquirrel's Angular libraries",
     demoUrl: 'https://schoolsquirrel.github.io/angular-libraries/',
   },
   {
@@ -69,7 +97,8 @@ export const projects: Project[] = [
     category: 'SchoolSquirrel',
     icon: 'schoolsquirrel.png',
     status: 'released',
-    description: 'The ESLint configuration for all SchoolSquirrel repositories (and many more ;-))',
+    description:
+      'The ESLint configuration for all SchoolSquirrel repositories (and many more ;-))',
   },
   {
     githubUrl: 'https://github.com/hrueger/hrueger.github.io',
@@ -96,7 +125,8 @@ export const projects: Project[] = [
     category: 'AGSuite',
     icon: 'agrallye.png',
     status: 'released',
-    description: 'A simple app to display teams and their current\
+    description:
+      'A simple app to display teams and their current\
     points in fullscreen on a second monitor in a school-chalkboard-like style',
   },
   {
@@ -107,7 +137,8 @@ export const projects: Project[] = [
     icon: 'fas fa-image',
     status: 'released',
     description: 'Assets for my apps on Google Play',
-    viewUrl: 'https://play.google.com/store/apps/developer?id=Hannes+R%C3%BCger',
+    viewUrl:
+      'https://play.google.com/store/apps/developer?id=Hannes+R%C3%BCger',
   },
   {
     githubUrl: 'https://github.com/hrueger/ya-mqtt-influx-bridge',
@@ -144,7 +175,8 @@ export const projects: Project[] = [
     category: 'AGSuite',
     icon: 'agfree.png',
     status: 'released',
-    description: 'A simple tool for students to check for common free periods. ',
+    description:
+      'A simple tool for students to check for common free periods. ',
   },
   {
     githubUrl: 'https://github.com/hrueger/AGTicket',
@@ -180,7 +212,8 @@ export const projects: Project[] = [
     category: 'library',
     icon: 'fas fa-wrench',
     status: 'released',
-    description: 'An image editor for Angular based on the ToastUI Image Editor.',
+    description:
+      'An image editor for Angular based on the ToastUI Image Editor.',
   },
   {
     githubUrl: 'https://github.com/hrueger/nativescript-letter-avatar',
@@ -207,7 +240,8 @@ export const projects: Project[] = [
     category: 'library',
     icon: 'fas fa-wrench',
     status: 'deprecated',
-    description: 'This is an emoji picker for nativescript purely out of nativescript components!',
+    description:
+      'This is an emoji picker for nativescript purely out of nativescript components!',
   },
   {
     githubUrl: 'https://github.com/hrueger/repoman',
@@ -234,7 +268,8 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'noTime',
-    description: 'A badge generator to show the "real" commits of a repository.',
+    description:
+      'A badge generator to show the "real" commits of a repository.',
   },
   {
     githubUrl: 'https://github.com/hrueger/redundancyJS',
@@ -252,7 +287,8 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'deprecated',
-    description: 'A cli tool to pack an application made with Angular and Express into a docker container.',
+    description:
+      'A cli tool to pack an application made with Angular and Express into a docker container.',
   },
   {
     githubUrl: 'https://github.com/hrueger/container-env',
@@ -261,7 +297,8 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'released',
-    description: 'An environment variable management tool for Node.js apps running inside containers',
+    description:
+      'An environment variable management tool for Node.js apps running inside containers',
   },
   {
     githubUrl: 'https://github.com/hrueger/my-autohotkey-scripts',
@@ -288,7 +325,8 @@ export const projects: Project[] = [
     category: 'tool',
     icon: 'fas fa-toolbox',
     status: 'released',
-    description: 'A GitHub Action to setup the NativeScript development environment on Windows, Linux and MacOSX.',
+    description:
+      'A GitHub Action to setup the NativeScript development environment on Windows, Linux and MacOSX.',
     viewUrl: 'https://github.com/marketplace/actions/setup-nativescript',
   },
   {

@@ -20,23 +20,33 @@
     </a>
 </div>
 <div class="row overflow-hidden projects">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-3 text-center py-5 project text-white d-flex flex-column" *ngFor="let project of projects; let idx = index">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-3 text-center py-5 project text-white d-flex flex-column"
+        *ngFor="let project of projects; let idx = index">
         <div>
             <h3 *ngIf="hasFaIcon(project)"><i [class]="project.icon + ' fa-2x'"></i></h3>
-            <img class="icon" *ngIf="!hasFaIcon(project)" [src]="project.icon.startsWith('https://') ? project.icon : ('assets/logos/' + project.icon)">
+            <img class="icon" *ngIf="!hasFaIcon(project)"
+                [src]="project.icon.startsWith('https://') ? project.icon : ('assets/logos/' + project.icon)">
             <h3> {{project.prettyName}}</h3>
-            <span [class]="'mr-2 d-inline badge text-bg-' + ({ released: 'success', development: 'warning', deprecated:  'secondary', noTime: 'danger' }[project.status])">{{project.status}}</span>
+            <span
+                [class]="'mr-2 d-inline badge text-bg-' + ({ released: 'success', development: 'warning', deprecated:  'secondary', noTime: 'danger' }[project.status])">{{project.status}}</span>
             <span [class]="'d-inline badge badge-primary'">{{project.category}}</span>
             <span class="d-block mb-5 mt-3">{{project.description}}{{project.isContributor && "*"}}</span>
-        </div>    
+        </div>
         <div class="mt-auto">
-            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.viewUrl" [href]="project.viewUrl">View <i class="fas fa-external-link-square-alt"></i></a>
-            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.docsUrl" [href]="project.docsUrl">View Documentation <i class="fas fa-book"></i></a>
-            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.demoUrl" [href]="project.demoUrl">Launch <i class="fas fa-rocket"></i></a>
-            <a target="_blank" class="d-block btn btn-outline-light" [href]="project.githubUrl">View on Github <i class="fab fa-github"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.viewUrl"
+                [href]="project.viewUrl">View <i class="fas fa-external-link-square-alt"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.docsUrl"
+                [href]="project.docsUrl">View Documentation <i class="fas fa-book"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.demoUrl"
+                [href]="project.demoUrl">Launch <i class="fas fa-rocket"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light mb-3" *ngIf="project.videoUrl"
+                [href]="project.videoUrl">Watch Video <i class="fas fa-video"></i></a>
+            <a target="_blank" class="d-block btn btn-outline-light" [href]="project.githubUrl">View on Github <i
+                    class="fab fa-github"></i></a>
         </div>
     </div>
     <div class="col-12 p-4 text-light">
-        <small>Disclaimer: Projects with a * are not my projects, but I've contributed a significant amount of code to it.</small>
+        <small>Disclaimer: Projects with a * are not my projects, but I've contributed a significant amount of code to
+            it.</small>
     </div>
 </div>
